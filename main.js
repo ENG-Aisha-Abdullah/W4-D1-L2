@@ -36,5 +36,9 @@ if ( connectionType == "fiber" && speed >= 500) {
     console.log(" Good fiber connection");
 } else if (connectionType == "fiber" && speed < 200) {
     console.log("Weak fiber connection");
+} else if (connectionType == "dsl" && speed >= 50) {
+    console.log(" Acceptable DSL connection");
+} else if (connectionType == "dsl" && speed < 50) {
+    console.log("Poor DSL connection");
 }
 
